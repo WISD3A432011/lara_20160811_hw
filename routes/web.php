@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as' => 'home.blade.php',function () {
+    return view('home');
+}]);
+
+Route::get('/about',['as' => 'about.blade.php', function () {
+    return view('about');
+}]);
+
+Route::get('/new',['as' => 'new.blade.php', function () {
+    return view('new');
+}]);
