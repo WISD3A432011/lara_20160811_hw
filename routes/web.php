@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', ['as' => 'home.blade.php',function () {
+Route::get('/', ['as' =>'home.index',function () {
     return view('home');
 }]);
 
-Route::get('/about',['as' => 'about.blade.php', function () {
+Route::get('about',['as' =>'about.index', function () {
     return view('about');
 }]);
 
-Route::get('/new',['as' => 'new.blade.php', function () {
-    return view('new');
+Route::get('news',['as' =>'news.index', function () {
+    return view('news');
 }]);
